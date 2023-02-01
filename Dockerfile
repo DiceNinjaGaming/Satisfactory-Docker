@@ -58,6 +58,5 @@ ENV STEAM_APPID="1690800" \
     TIMEOUT="300"
 
 # HEALTHCHECK CMD sv status ddns | grep run || exit 1
-# RUN chmod 755 /etc/service/ddns/run
 
 CMD pwsh /scripts/Entrypoint.ps1
