@@ -34,6 +34,29 @@ COPY ./scripts/Start-Server.ps1 .
 COPY ./scripts/Start-BackupService.ps1 .
 COPY ./scripts/Start-UpdateService.ps1 .
 
+# Set up game-specific variable defaults
+ENV STEAM_APPID="1690800" \
+    AUTO_PAUSE="true" \
+    BACKUP_AUTOSAVE_AMOUNT="5" \
+    BACKUP_AUTOSAVE_INTERVAL="300" \
+    BACKUP_AUTOSAVE_ONDISCONNECT="true" \
+    CRASH_REPORT="true" \
+    DISABLE_SEASONAL_EVENTS="false" \
+    # GAMECONFIGDIR="/config/gamefiles/FactoryGame/Saved" \
+    # GAMESAVESDIR="/home/steam/.config/Epic/FactoryGame/Saved/SaveGames" \
+    MAXOBJECTS="2162688" \
+    MAXPLAYERS="4" \
+    NETWORKQUALITY="3" \
+    # PGID="1000" \
+    # PUID="1000" \
+    SERVERBEACONPORT="15000" \
+    SERVERGAMEPORT="7777" \
+    SERVERIP="0.0.0.0" \
+    SERVERQUERYPORT="15777" \
+    SKIPUPDATE="false" \
+    STEAMBETA="false" \
+    TIMEOUT="300"
+
 # HEALTHCHECK CMD sv status ddns | grep run || exit 1
 # RUN chmod 755 /etc/service/ddns/run
 
