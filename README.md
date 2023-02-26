@@ -1,5 +1,7 @@
-# baseimage
-A base image for game servers
+# Satisfactory Docker Image
+A Docker image that can be used to host a Satisfactory server.
+
+**This is still WIP and may not be in a working state yet**
 
 # Important folders
 | Name | Description |
